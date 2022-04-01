@@ -5,8 +5,8 @@ import './style.scss'
 import { Button, Card,CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
-import Navbar from "../navbar";
-import Headline from "../carousel";
+import Navbar from "../../navbar";
+import Headline from "../../carousel";
 
 export default function HomePage() {
     const [data, setData] = useState([]);
