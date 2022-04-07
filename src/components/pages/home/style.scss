@@ -5,10 +5,10 @@ $forth-color: #3d5a80;
 $box-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
 $sidebar-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
 
-.catalog-body{
+.news-page{
     width: 100%;
     overflow-x: hidden;
-    background-color: $main-color;
+    text-transform: uppercase;
     .catalogue{
         margin: 10px 10px 10px 6%;
         .login-button{
@@ -30,6 +30,14 @@ $sidebar-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
             text-align: center;
             max-width: 250px;
             max-height: 400px;
+            &:hover{
+                .card-img{
+                    transform: scale(1.05);
+                }
+                .card-title{
+                    text-decoration-line: underline;
+                }
+            }
             .card-img{
                 height: 70%;
                 width: 70%;
@@ -37,9 +45,6 @@ $sidebar-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
                 border-radius: 50%;
                 transform: scale(1);
                 transition: 0.5s ease-in-out;
-                &:hover{
-                    transform: scale(1.05);
-                }
             }
             .card-title{
                 margin-top: 1rem;

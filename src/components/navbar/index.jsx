@@ -1,38 +1,71 @@
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import './style.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Button, Input } from "reactstrap";
+const db = require('../../db.json')
 
-export default function Navbar() {
+export default function Navbar({handleHome, handleClub, handleCategory}) {
+    const [club, setClub] = useState([]);
+    const getClub = () => {
+        setClub(db.clubs)
+    };
+    const category = [];
+    db.news.map((d) => d.category.map((dd) => {if (!category.includes(dd)){category.push(dd)}}))
+    
+    useEffect(() => {
+        getClub();
+    }, []);
+    console.log(category);
     return (
         <>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Club</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline">
-                        <Input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <Button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</Button>
-                    </form>
+            <div className="nav">
+                <div className="nav-container">
+                    <div className="items">
+                        <h4 className="logo"> EPL NEWS</h4>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li className="club-menu">
+                                <a href="/club" onClick={() => handleClub()}>Club</a>
+                                <ul className="dropdown-club">
+                                    {club.map((d) => (
+                                        <li className="club-list" key={d.id}>
+                                            <a href={`/club/${d.id}`}>{d.name}</a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </li>
+                            <li className="club-menu">
+                                <a href="/category" onClick={() => handleCategory()}>Category</a>
+                                <ul className="dropdown-club">
+                                    {category.map((d,idx) => (
+                                        <li className="club-list" key={idx}>
+                                            <a href={`/category/${d}`}>{d}</a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="search-section">
+                        <ul>
+                            <li className="search-icon">
+                                <input type="search" placeholder="Search" />
+                                <label className="icon">
+                                    <span><FontAwesomeIcon icon={faSearch} className="faSearch"/></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </>
 
     )
