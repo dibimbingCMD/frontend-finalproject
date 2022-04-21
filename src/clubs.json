@@ -1,0 +1,25 @@
+{
+    "clubs": [
+      { "logo": "https://3.bp.blogspot.com/-jDtOMiFKCMs/WI3ZW0wT9ZI/AAAAAAAAE7I/7hNa2kwsiYg7r3jD6sODaRQdDWDBkIsVQCLcB/s600/Arsenal.png", "name": "arsenal" },
+      { "logo": "https://1.bp.blogspot.com/-bw8s5WHDEXQ/WKrBJQH79-I/AAAAAAAAFJ4/IpPdoK93pEMUfG9O_GHaNdc1ZE_yo6RBACLcB/s600/Aston%2BVilla.png", "name": "aston villa" },
+      { "logo": "https://1.bp.blogspot.com/-j0_hezwH7cE/XyqtVSfOvTI/AAAAAAAAJZA/owF0XhKr93c_LuFy08FVH5QjlO3zJXbLQCLcBGAsYHQ/s600/Brentford_FC.png", "name": "brentford" },
+      { "logo": "https://1.bp.blogspot.com/-t9etSkgEA6o/WKrBKFKIC4I/AAAAAAAAFKI/4w4Ml-1MjoU7UW6LO56shRoTXH1ZaKTJACLcB/s600/Brighton%2B%2526%2BHove%2BAlbion.png", "name": "brighton & hove albion" },
+      { "logo": "https://2.bp.blogspot.com/-N5mBO2qvpr4/WI3ZW515IxI/AAAAAAAAE7A/hp_2b6u2xn4-hl4wqZo2u8JChmBEJJ2eQCLcB/s600/Burnley%2BF.C..png", "name": "burnley" },
+      { "logo": "https://3.bp.blogspot.com/-30nsNSMA1oE/WI3ZXiP0UGI/AAAAAAAAE7Q/8iOvSsht76MRr-KX3GnufQkwdYmRTYroQCLcB/s600/Chelsea.png", "name": "chelsea" },
+      { "logo": "https://1.bp.blogspot.com/-FMzILhyEdUk/WI3ZXuEbniI/AAAAAAAAE7U/rbUe5twiprcAvh9dK5nI8kneimPaL_QlwCLcB/s600/Crystal%2BPalace.png", "name": "crystal palace" },
+      { "logo": "https://2.bp.blogspot.com/-bKpUVcxrwiE/WI3ZXV1BPuI/AAAAAAAAE7M/iA2JPc1UFqQXm08skyb-BZCf6nXI3xEXgCLcB/s600/Everton.png", "name": "everton" },
+      { "logo": "https://blogger.googleusercontent.com/img/a/AVvXsEgFyyQKTJ2c6kfQfofXVVo6LknkuY4jCSxuH9iQItXnEChYOTL0Da3c96Ft6dqFVbm7qLlf-EW-wHbhnIW7scdWh_sEQdR3bB2Utu7vSCbyuGZxFXDnU8-9yb8r69_e7Pk98Qsanv7N20wDIm6QC73s0Q4m4fWXibECYVLkiLt2xDlGbSCOgEjqgkng=s600", "name": "leeds united" },
+      { "logo": "https://1.bp.blogspot.com/-wNTzE_iFnUU/WI3ZYBzy7-I/AAAAAAAAE7Y/8AxDScSbqlcTEAMfHY-KIN5QuJx8rQynQCLcB/s600/Leicester%2BCity.png", "name": "leicester city" },
+      { "logo": "https://3.bp.blogspot.com/-mQhsAEwXu60/WI3ZYLDCjXI/AAAAAAAAE7c/U2VzRM9jV88aJT5O40r2acq2ICbe-yGDQCLcB/s600/Liverpool.png", "name": "liverpool" },
+      { "logo": "https://3.bp.blogspot.com/-CR_2muWX-7s/WI3ZYwIGwLI/AAAAAAAAE7k/OltdjQk6648IYZ0aqqVVfl4kSCyo3I4ngCLcB/s600/Manchester%2BCity.png", "name": "manchester city" },
+      { "logo": "https://3.bp.blogspot.com/-bRX9fss8qDg/WI3ZY3DEhZI/AAAAAAAAE7o/JOS65Q6srP4I-5i-sGS3YWngv9eNPBfUQCLcB/s600/Manchester%2BUnited.png", "name": "manchester united" },
+      { "logo": "https://1.bp.blogspot.com/-tKYRstUDJkw/WKrBL6a3oyI/AAAAAAAAFKs/0RM_favmlXM7pa7yTClhUfr_KgwGkNT5wCLcB/s600/Newcastle%2BUnited.png", "name": "newcastle united" },
+      { "logo": "https://1.bp.blogspot.com/-haQXRm8PlFE/WKrBMMkb-aI/AAAAAAAAFK0/Cbv8UY4YiekxQF4mE9oOCXxf2oLH4q3gACLcB/s600/Norwich%2BCity%2BF.C..png", "name": "norwich city" },
+      { "logo": "https://4.bp.blogspot.com/-jccCand4LVo/WI3ZZQ0lqJI/AAAAAAAAE70/FTqT2_HLEasX7POtjqEioXti2Ht415I6gCLcB/s600/Southampton%2BF.C..png", "name": "southampton" },
+      { "logo": "https://3.bp.blogspot.com/-iLO-cl2Joww/WI3ZZxd-G8I/AAAAAAAAE8A/XrxRTtOafn4y5ifudzEnvhQfqa9Goc1EACLcB/s600/Tottenham%2BHotspur%2BF.C..png", "name": "tottenham hotspurs" },
+      { "logo": "https://3.bp.blogspot.com/-qpt7ezSb6Oo/WI3ZaA-8a0I/AAAAAAAAE8E/ta2Tzjwi91Ao4AbyIuHa5mgwdufsF0tnwCLcB/s600/Watford.png", "name": "watford" },
+      { "logo": "https://1.bp.blogspot.com/-nQTYNyO1xkw/WI3ZasnMOAI/AAAAAAAAE8M/A_RFCtq2liEN405yUGh4DR2FmVcGtevWACLcB/s600/West%2BHam%2BUnited.png", "name": "west ham united" },
+      { "logo": "https://2.bp.blogspot.com/-YllesNpT4MM/WKrBNqeomQI/AAAAAAAAFLU/mqe37I-erTcNkbgrhlWan-iiVPndsRKfgCLcB/s600/Wolverhampton%2BWanderers.png", "name": "wolverhampton wanderers" }
+    ]
+  }
+  

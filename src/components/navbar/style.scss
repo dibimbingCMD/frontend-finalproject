@@ -1,0 +1,29 @@
+$main-color: #E8E8E4;
+$second-color: #D8E2DC;
+$third-color: #ECE4DB;
+$forth-color: #3d5a80;
+$box-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
+$sidebar-shadow:  0 .5rem 1.5rem rgba(0,0,0,.4);
+
+li{
+    list-style-type: none;
+}
+.navigation-bar{
+    height: 60px;
+    z-index: 2000;
+    overflow-x: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    .container{
+        margin-top: 10px;
+        .btn-light{
+            background: black;
+            color: white;
+        }
+    }
+}

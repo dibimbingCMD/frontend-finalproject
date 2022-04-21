@@ -1,0 +1,47 @@
+$main-color: #E8E8E4;
+$second-color: #D8E2DC;
+$third-color: #ECE4DB;
+$forth-color: #3d5a80;
+$box-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
+$sidebar-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
+
+
+.categories-list-section{
+    margin: 10px 10px 10px 6%;
+    max-width: 100%;
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            .categories-list-title{
+                text-decoration-line: underline;
+                color: black;
+            }
+            .categories-list-content{
+                color: black;
+            }
+        }
+    }
+    .categories-list-headline{
+        display: flex;
+        align-items: center;
+
+    }
+    .categories-list-body{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: justify;
+        .categories-list-pict-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin-bottom: 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+            overflow: hidden;
+            .news-pict{
+                object-fit: cover;
+            }
+        }
+    }
+}

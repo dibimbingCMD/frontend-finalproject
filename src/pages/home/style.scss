@@ -1,0 +1,25 @@
+$main-color: #E8E8E4;
+$second-color: #D8E2DC;
+$third-color: #ECE4DB;
+$forth-color: #3d5a80;
+$box-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
+$sidebar-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
+
+.home-page{
+    a{
+        color: black;
+    }
+    width: 100%;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    margin-top: 80px;
+    .home-layout{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: white;
+        }
+    }
+}
