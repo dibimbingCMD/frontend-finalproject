@@ -49,7 +49,7 @@ export default function SubmitPage() {
             },
         })
             .then((res) => {
-                window.location = `/news/${res.data._id}`;
+                window.location = `/dashboard/${params._id}`;
             })
             .catch((err) => console.error(err));
     };
