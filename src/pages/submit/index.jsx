@@ -118,8 +118,8 @@ export default function SubmitPage() {
                                         }))
                                     }} className="form-select form-control" name="club" aria-label="club">
                                     <option value=""> Choose Related Club</option>
-                                    {club.map((c) => (
-                                        <option value={c.name}>{c.name}</option>
+                                    {club.map((c, idx) => (
+                                        <option key={idx} value={c.name}>{c.name}</option>
                                     ))}
                                 </select>
                             </div>

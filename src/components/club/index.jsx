@@ -19,8 +19,8 @@ export default function Clubs() {
                     <h2>clubs</h2>
                 </div>
                 <div className="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-                    {data.map((d) => (
-                        <a href={`/club/${d.name}`}className="col text-center clubs-link" key={d._id}>
+                    {data.map((d, idx) => (
+                        <a key={idx} href={`/club/${d.name}`}className="col text-center clubs-link">
                             <div className="clubs-img">
                                 <img src={`${d.logo}`} alt="" loading={"lazy"} />
                             </div>

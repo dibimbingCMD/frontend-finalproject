@@ -19,11 +19,9 @@ export default function ClubNewsPage() {
     };
     
     useEffect(() => {
-        // getClub();
         getData();
         setPage(`${params.club}`)
     }, []);
-    console.log(data);
     return(
         <div className="container-xxl px-md-5 bg-white shadow-lg home-page">
             < Navbar />

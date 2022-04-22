@@ -28,9 +28,6 @@ export default function HomePage() {
                     <p className="lead">
                         lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                     </p>
-                    <div className="d-grid gap-2 d-md-flex justify-content-md-start home-btn">
-                        <a href="/random-recipe" className="btn btn-outline-secondary btn-dark btn-lg px-4 me-md-2">Show Random</a>
-                    </div>
                 </div>
             </div>
             <LatestNews />

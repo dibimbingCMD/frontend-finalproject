@@ -1,22 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 import './style.scss';
-const clubs = require('../../clubs.json');
 
 export default function Navbar() {
-  const [club, setClub] = useState([]);
   const [loggedIn, setLoggedIn] = useState(true);
-  const getClub = () => {
-    setClub(clubs.clubs);
-  };
-  const category = [];
-  // db.news.map((d) =>
-  //   d.category.map((dd) => {
-  //     if (!category.includes(dd)) {
-  //       category.push(dd);
-  //     }
-  //   })
-  // );
   const RequiredAuth = () => {
     let isAuth = localStorage.getItem('access_token')
     if (!isAuth) {
@@ -28,10 +15,8 @@ export default function Navbar() {
     window.location = `/`
   };
   useEffect(() => {
-    getClub();
     RequiredAuth();
   }, []);
-  console.log(category);
   return (
     <>
       <header className="navigation-bar">
@@ -65,7 +50,7 @@ export default function Navbar() {
             </ul>
 
             <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-              <input type="search" className="form-control form-control-dark" placeholder="Search..." aria-label="Search" />
+              <input type="search" name='search' className="form-control form-control-dark" placeholder="Search..." aria-label="Search" />
             </form>
 
             <div className="text-end">

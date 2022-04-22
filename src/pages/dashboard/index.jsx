@@ -37,7 +37,6 @@ export default function DashboardPage() {
         setHeader(listHeader);
         getData();
     }, []);
-    console.log(data);
     return(
         <div className="container-xxl px-md-5 bg-white shadow-lg dashboard-body">
             <Navbar/>
