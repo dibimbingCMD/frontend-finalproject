@@ -11,7 +11,6 @@ import ClubNewsPage from './pages/clubNews';
 import CategoriesListPage from './pages/categoryList';
 import CategoryNewsPage from './pages/categoryNews';
 import ClubListPage from './pages/clubList';
-import SearchNewsPage from './pages/searchNews';
 
 const RequiredAuth = () => {
   let isAuth = localStorage.getItem('access_token')
@@ -36,9 +35,6 @@ function App() {
           <Route path='/club' >
             <Route path=":club" element={<ClubNewsPage/>} />
             <Route index element={<ClubListPage />} />
-          </Route>
-          <Route path=';id' >
-            <Route index element={<SearchNewsPage />} />
           </Route>
           <Route path='/news' >
             <Route path=":_id" element={<NewsPage/>} />
